@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>tasks</title>
+</head>
+<body>
+    <!-- pomodoro -->
+    <div class="pomo">
+        <h2 class="title">pomodoro timer</h2>
+        <h1 class="number">5:00</h1>
+        <div class="btn">
+            <button class="start-btn">start</button>
+            <button class="stop-btn">stop</button>
+            <button class="rset-btn">Reset</button>
+        </div>
+    </div>
+    <!-- quize app -->
+    <div class="bdy">
+        <div class="quize-container" id="quize">
+            <div class="quize-header">
+                 <h2 id="question">Question is loading...</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer" />
+                        <label for="a" id="a-text">answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer" />
+                        <label for="b" id="b-text">answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer" />
+                        <label for="c" id="c-text">answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer" />
+                        <label for="d" id="d-text">answer</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">submit</button>
+        </div>
+    </div>
+    <!-- password generater -->
+    <section>
+        <div class="card">
+            <span>generate password</span>
+            <hr>
+            <input type="text" class="password-input" placeholder="password">
+            <button id="gen-btn">gerenate password</button>
+        </div>
+    </section>
+     
+ <div class="EVC">
+    <div class="plus">
+        <h1>EVC-PLUS</h1>
+        <hr>
+
+        <input
+            type="text"
+            id="evc-code"
+            placeholder="*770#"
+        >
+
+        <br>
+
+        <button id="evc-send">Send</button>
+ 
+        <div id="evc-result"></div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
